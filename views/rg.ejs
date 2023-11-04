@@ -1,0 +1,35 @@
+<%-include("loxy/header.ejs")%>
+
+
+<%-include("loxy/nav.ejs")%>
+<link rel="stylesheet" href="/stylesheets/rg.css">
+
+<div class="cont1">
+<h1>Employee Registration</h1>
+<div class="cont2">
+<form action="/rg" method="post">
+<h2>Employee Name</h2>
+<input type="text" name="name" placeholder="Employe full name">
+<br><br>
+<h2>Employee Age</h2>
+ <input type="text" name="age" placeholder="employe age">
+<br><br>
+ <h2>Employe Image</h2>
+ <input type="text" name="image" placeholder="image url ">
+ <br><br>
+ <h2>Employe Location </h2>
+ <input type="text" name="location" placeholder="employe location">
+ <br><br>
+ <h2>Employe Salary</h2>
+ <input type="text" name="salary" placeholder="Salary in ₹₹">
+ <br><br>
+ <h2>Joining Date</h2>
+ <input type="date" name="date" >
+ <br><br>
+ <button>submit</button>
+</div>
+</form>
+</div>
+
+
+<%-include("loxy/footer.ejs")%>

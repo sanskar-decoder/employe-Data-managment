@@ -1,0 +1,24 @@
+<%-include("loxy/header.ejs")%>
+<%-include("loxy/nav.ejs")%>
+ <link rel="stylesheet" href="/stylesheets/show.css">
+
+<div class="cont1">
+    <h1>Employe Data</h1>
+
+ <%b.forEach((elem)=>{%>
+    <div class="cont2">
+    
+     <div class="imgbox" style="background-image: url('<%=elem.image%>'); background-position: center; background-size: cover;"></div>
+     <h2>Employe Name     : <span><%=elem.name%></span></h2>
+     <h2>Employe Age      : <span><%=elem.age%></span></h2>
+     <h2>Employe Location : <span><%=elem.location%></span></h2>
+     <h2>Employe Salary   : <span><%=elem.salary%></span></h2>
+     <h2>Joining Date    : <span><%=elem.date%></span></h2>
+    <a href="/explore/<%=elem._id%>"><Button>Explore Data</Button></a>
+
+    </div>
+
+ <%})%>
+
+</div>
+<%-include("loxy/footer.ejs")%>

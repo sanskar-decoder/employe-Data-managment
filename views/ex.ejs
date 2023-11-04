@@ -1,0 +1,28 @@
+<%-include('loxy/header.ejs')%>
+
+<%-include('loxy/nav.ejs')%>
+<link rel="stylesheet" href="/stylesheets/ex.css">
+
+<div class="cont1">
+    <h1><%=d.name%> Data</h1>
+
+ 
+   <div class="cont2">
+    
+     <div class="imgbox" style="background-image: url('<%=d.image%>'); background-position: center; background-size: cover;"></div>
+    <h2>Employe Name     : <span><%=d.name%></span></h2>
+    <h2>Employe Age      : <span><%=d.age%></span></h2>
+    <h2>Employe Location : <span><%=d.location%></span></h2>
+    <h2>Employe Salary   : <span><%=d.salary%></span></h2>
+     <h2>Joing Date      : <span><%=d.date%></span></h2>
+     
+
+    
+    <a href="/update/<%=d._id%>"><Button>Update Data</Button></a>
+    <a href="/delete/<%=d._id%>"><Button>Delete Data</Button></a>
+
+</div>
+</div>
+
+
+ <%-include('loxy/footer.ejs')%>

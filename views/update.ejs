@@ -1,0 +1,33 @@
+<%-include('loxy/header.ejs')%>
+<%-include('loxy/nav.ejs')%>
+<link rel="stylesheet" href="/stylesheets/rg.css">
+
+<div class="cont1">
+<h1><%=f.name%> Data Update</h1>
+<div class="cont2">
+<form action="/update/<%=f._id%>" method="post">
+<h2>Employee Name</h2>
+<input type="text" value="<%=f.name%>" name="name" placeholder="Employe full name">
+<br><br>
+<h2>Employee Age</h2>
+ <input type="text" value="<%=f.age%>" name="age" placeholder="employe age">
+<br><br>
+ <h2>Employe Image</h2>
+ <input type="text" value="<%=f.image%>" name="image" placeholder="image url ">
+ <br><br>
+ <h2>Employe Location </h2>
+ <input type="text" value="<%=f.location%>" name="location" placeholder="employe location">
+ <br><br>
+ <h2>Employe Salary</h2>
+ <input type="text" value="<%=f.salary%>" name="salary" placeholder="Salary in ₹₹">
+ <br><br>
+ <h2>Joining Date</h2>
+ <input type="date" value="<%=f.date%>" name="date" >
+ <br><br>
+ <button>Update data</button>
+</div>
+</form>
+</div>
+
+
+<%-include('loxy/footer.ejs')%>
